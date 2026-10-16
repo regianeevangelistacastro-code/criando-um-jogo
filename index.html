@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Ilha dos Cristais</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 15px;
+      background: #172c25;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ffe47a;
+      margin: 8px 0;
+    }
+
+    p {
+      margin: 8px;
+    }
+
+    #game {
+      width: 100%;
+      max-width: 800px;
+      margin: 15px auto;
+      overflow: hidden;
+      border: 4px solid #f4d58d;
+      border-radius: 10px;
+      background: #83d878;
+    }
+
+    #game canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .controls {
+      max-width: 800px;
+      margin: auto;
+      padding: 12px;
+      background: #294d3a;
+      border-radius: 10px;
+      line-height: 1.8;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+</head>
+
+<body>
+  <h1>🏝️ A Ilha dos Cristais 💎</h1>
+
+  <p>Explore a ilha, enfrente monstros e encontre os cristais mágicos!</p>
+
+  <div id="game"></div>
+
+  <div class="controls">
+    <strong>Controles</strong><br>
+    WASD ou setas: movimentar<br>
+    SHIFT: correr<br>
+    F: atacar<br>
+    E: falar com o guardião<br>
+    I: abrir inventário<br>
+    H: usar poção
+  </div>
+
+  <script src="./game.js"></script>
+</body>
+</html>
+
+

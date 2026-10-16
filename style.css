@@ -1,0 +1,100 @@
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #214333;
+  background: linear-gradient(180deg, #8be3ff 0%, #d7f8d0 100%);
+  text-align: center;
+}
+
+header {
+  padding: 18px 12px 8px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: clamp(1.6rem, 5vw, 2.8rem);
+}
+
+header p {
+  margin: 0 0 12px;
+}
+
+#game {
+  width: min(800px, 96vw);
+  margin: 12px auto;
+  overflow: hidden;
+  border: 4px solid white;
+  border-radius: 14px;
+  background: #83d878;
+  box-shadow: 0 8px 25px #21563a30;
+}
+
+#game canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  outline: none;
+}
+
+.instructions {
+  width: min(800px, 94vw);
+  margin: 20px auto;
+  padding: 16px;
+  border: 2px solid #ffffffa0;
+  border-radius: 16px;
+  background: #ffffffa8;
+  box-shadow: 0 5px 16px #21563a15;
+}
+
+.instructions h2 {
+  margin-top: 0;
+}
+
+.instructions p {
+  margin: 10px 0;
+  line-height: 1.7;
+}
+
+kbd {
+  display: inline-block;
+  min-width: 28px;
+  padding: 3px 7px;
+  border: 1px solid #9aaf9f;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 2px 0 #b8c8ba;
+  font: 600 0.85rem monospace;
+}
+
+footer {
+  padding: 10px;
+  color: #456652;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding-top: 12px;
+  }
+
+  #game {
+    width: 100%;
+    border-width: 2px;
+    border-radius: 6px;
+  }
+
+  .instructions {
+    padding: 12px 6px;
+  }
+}
+
